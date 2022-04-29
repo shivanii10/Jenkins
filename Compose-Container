@@ -1,11 +1,10 @@
 services:
-database:
-image: redis
-web:
-image: nginx
-ports:
-- published: 9090
-target: 80
+  database:
+    image: redis
+  web:
+    image: nginx
+    ports: 
+     - 9090:80
 
 docker-compose config
 docker-compose up -d
