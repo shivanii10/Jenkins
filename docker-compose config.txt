@@ -1,0 +1,9 @@
+services:
+  database:
+    image: redis
+  web:
+    image: nginx
+    ports:
+    - published: 9090
+      target: 80
+version: '3.9'
