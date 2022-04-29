@@ -17,5 +17,11 @@ public class DemoApplication {
 	public String test1() {
 		return "This is test1";
 	}
+	
+	@GetMapping("/test2")
+	public String test2() {
+		return "This is test2";
+	}
+	
 
 }
